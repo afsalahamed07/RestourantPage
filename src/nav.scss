@@ -1,0 +1,18 @@
+nav {
+  .nav-content {
+      width: 80%;
+      margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+
+    .item {
+      flex-grow: 1;
+      padding: 1rem;
+    }
+
+    // overriding flex grow
+    :first-child {
+      flex-grow: 4;
+    }
+  }
+}

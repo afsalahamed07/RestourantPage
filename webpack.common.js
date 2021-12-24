@@ -3,12 +3,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: "./src/index.js"
+    main: "./src/index.js",
+    nav: "./src/nav.js",
   },
   plugins: [
       // can use templates too
     new HtmlWebpackPlugin({
-      title: 'Restourant Page',
+      template: "./src/template.html",
+      title: 'Restaurant Page',
     }),
   ],
   module: {
@@ -20,10 +22,6 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
-        options: {
-          name: "[name].[hash].[ext]",
-          outputPath: "imgs"
-        }
       },
     ],
   },
