@@ -1,4 +1,5 @@
 import {makeDiv as div} from "./utils/create-div";
+import {makeList as li} from "./utils/create-list";
 import "./nav.scss"
 
 let navItems = ['Honey Bar', 'Home', 'Menu', 'Contact Us'];
@@ -8,8 +9,11 @@ const navContent = div("nav-content");
 nav.appendChild(navContent);
 
 navItems.forEach(element => {
-    let itemDiv = div("item");
-    itemDiv.textContent = element;
+    let item = li("item");
 
-    navContent.appendChild(itemDiv);
+    if (element === "Home") item.setAttribute("id", "home")
+
+    item.textContent = element;
+
+    navContent.appendChild(item);
 });

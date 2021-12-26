@@ -1,18 +1,36 @@
+@import "variables";
+
 nav {
+  background-color: $nav-background;
   .nav-content {
-      width: 80%;
-      margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: flex-end;
 
-    .item {
+    li {
+      list-style: none;
       flex-grow: 1;
       padding: 1rem;
+      margin: auto;
+      color: $brown;
+
+      &:hover {
+        cursor: pointer;
+        color: black;
+      }
+
+      &:active {
+        color: black;
+      }
     }
 
     // overriding flex grow
     :first-child {
-      flex-grow: 4;
+      flex-grow: 5;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $brown;
     }
   }
 }
