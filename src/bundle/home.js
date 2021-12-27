@@ -1,5 +1,5 @@
-import homeTemplate from "./home.html";
-import "./home.scss";
+import homeTemplate from "../template/home.html";
+import "../sytle/home.scss";
 
 const home = document.querySelector("#home");
 const content = document.querySelector("#content")

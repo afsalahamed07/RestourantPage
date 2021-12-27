@@ -3,13 +3,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     main: "./src/index.js",
-    nav: "./src/nav.js",
-    home: "./src/home.js",
+    nav: "./src/bundle/nav.js",
+    home: "./src/bundle/home.js",
+    menu: "./src/bundle/menu.js",
+    contact: "./src/bundle/contact.js"
   },
   plugins: [
       // can use templates too
     new HtmlWebpackPlugin({
-      template: "./src/template.html",
+      template: "./src/template/template.html",
       title: 'Restaurant Page',
     }),
   ],
