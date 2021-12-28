@@ -6,7 +6,7 @@ module.exports = {
     nav: "./src/bundle/nav.js",
     home: "./src/bundle/home.js",
     menu: "./src/bundle/menu.js",
-    contact: "./src/bundle/contact.js"
+    contact: "./src/bundle/contact.js",
   },
   plugins: [
       // can use templates too

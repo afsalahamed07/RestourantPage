@@ -1,4 +1,48 @@
+@import "../utils/variables";
 .contact-div {
-  display: flex;
-  flex-direction: row;
+  flex-grow: 1;
+  background-color: $light-background;
+  border-radius: 2rem;
+  padding: 1rem;
+
+  margin: 2rem 0;
+  box-shadow: 0 0 10px 10px $light-background;
+
+  .person {
+    display: flex;
+    padding: 1.5rem 3rem;
+    margin: 1rem auto;
+
+    border:0.5px dotted black;
+    border-radius: 1rem;
+
+    width: 75%;
+
+
+    img {
+      height: 10rem;
+      width: 10rem;
+      margin-right: 1rem;
+    }
+
+    .person-det {
+      flex-grow: 2;
+
+    }
+    .person-name {
+      display: flex;
+      border-bottom: 0.5px dotted black;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1rem;
+    }
+
+
+    p {
+      line-height: 2rem;
+      padding-left: 1rem;
+    }
+  }
 }
+
+

@@ -7,10 +7,18 @@ html {
   background-color: $yellow;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
 #content {
   margin: 0 auto;
   width: 80%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -29,4 +37,22 @@ h3 {
 }
 
 
+footer {
+  background-color: $nav-background;
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: $brown;
+  }
+
+  img {
+    height: 1.5rem;
+  }
+
+  }
 
